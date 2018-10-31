@@ -1,0 +1,15 @@
+# Configure this Discovery Server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+   
+server:
+  port: 1111
+  enableSelfPreservation: false
+# Discovery Server Dashboard uses FreeMaker.
+spring:
+  thymeleaf:
+    enabled: false

@@ -1,0 +1,23 @@
+# Spring properties
+spring:
+  application:
+    name: microservice-reservation
+  freemarker:
+    enabled: false
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/ 
+    
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+    healthcheck:
+      enable: true
+  instance:
+    leaseRenewallIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+# HTTP Server
+server:
+  port: 2222
